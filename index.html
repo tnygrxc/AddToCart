@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanya & Co.</title>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2237/2237677.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Tanya & Co.</h1>
+  <nav>
+    <ul>
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="index.html">Shop</a></li>
+      <li><a href="ContactPage.html">Contact</a></li>
+      <li><a href="AboutPage.html">About</a></li>
+      <li><a href="index.html" id="cart">Cart (0)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="content">
+  <main>
+    <div class="product">
+      <img src="https://i.postimg.cc/NMx68CdK/Diamond-Ring.jpg" alt="Jewelry1">
+      <h2>Diamond Ring</h2>
+      <p class="price">₱45,000.00</p>
+      <button class="add-to-cart" data-name="Diamond Ring" data-price="45000">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://i.postimg.cc/xCskTws3/Engagement-Ring.jpg" alt="Jewelry2">
+      <h2>Engagement Ring</h2>
+      <p class="price">₱80,000.00</p>
+      <button class="add-to-cart" data-name="Engagement Ring" data-price="80000">Add to Cart</button>
+    </div>
+      
+    <div class="product">
+      <img src="https://i.postimg.cc/tgp7dqwz/Figaro-Bracelet.jpg" alt="Jewelry3">
+      <h2>Figaro Bracelet</h2>
+      <p class="price">₱35,000.00</p>
+      <button class="add-to-cart" data-name="Figaro Bracelet" data-price="35000">Add to Cart</button>
+    </div>
+      
+    <div class="product">
+      <img src="https://i.postimg.cc/VkBkNyv0/Paperclip-Bracelet.jpg" alt="Jewelry4">
+      <h2>Paper Clip Bracelet</h2>
+      <p class="price">₱15,000.00</p>
+      <button class="add-to-cart" data-name="Paper Clip Bracelet" data-price="15000">Add to Cart</button>
+    </div>
+      
+    <div class="product">
+      <img src="https://i.postimg.cc/HxjY3V2b/Stone-Bracelet.jpg" alt="Jewelry5">
+      <h2>Stone Bracelet</h2>
+      <p class="price">₱25,000.00</p>
+      <button class="add-to-cart" data-name="Stone Bracelet" data-price="25000">Add to Cart</button>
+    </div>
+      
+    <div class="product">
+      <img src="https://i.postimg.cc/mrsVQ9T6/Heart-Necklace.jpg" alt="Jewelry6">
+      <h2>Heart Necklace</h2>
+      <p class="price">₱30,000.00</p>
+      <button class="add-to-cart" data-name="Heart Necklace" data-price="30000">Add to Cart</button>
+    </div>
+      
+    <div class="product">
+      <img src="https://i.postimg.cc/6qyh9LhT/Initial-Necklace.jpg" alt="Jewelry7">
+      <h2>Initial Necklace</h2>
+      <p class="price">₱20,000.00</p>
+      <button class="add-to-cart" data-name="Initial Necklace" data-price="20000">Add to Cart</button>
+    </div>
+      
+    <div class="product">
+      <img src="https://i.postimg.cc/nzwvw9tx/Pear-Earring.jpg" alt="Jewelry8">
+      <h2>Pearl Earrings</h2>
+      <p class="price">₱50,000.00</p>
+      <button class="add-to-cart" data-name="Pearl Earrings" data-price="50000">Add to Cart</button>
+    </div>
+      
+    <div class="product">
+      <img src="https://i.postimg.cc/XNHFVCm6/Stud-Earring.jpg" alt="Jewelry9">
+      <h2>Stud Earrings</h2>
+      <p class="price">₱18,000.00</p>
+      <button class="add-to-cart" data-name="Stud Earrings" data-price="18000">Add to Cart</button>
+    </div>
+      
+    <div class="product">
+      <img src="https://i.postimg.cc/WpCGGZn6/Gold-Hoops.jpg" alt="Jewelry10">
+      <h2>Hoop Earrings</h2>
+      <p class="price">₱15,000.00</p>
+      <button class="add-to-cart" data-name="Hoop Earrings" data-price="15000">Add to Cart</button>
+    </div>
+  </main>
+    
+    
+
+  <aside id="cart-details">
+    <h2>Cart Details</h2>
+    <div id="cart-items-container">
+      <ul id="cart-items"></ul>
+    </div>
+    <p>Total Price: ₱<span id="total-price">0.00</span></p>
+
+    <h3>Customer Information</h3>
+    <label for="customer-name">Name:</label>
+    <input type="text" id="customer-name" required><br>
+    <label for="customer-address">Address:</label>
+    <input type="text" id="customer-address" required><br>
+    <label for="customer-contact">Contact Number:</label>
+    <input type="text" id="customer-contact" required><br>
+    <button id="confirm-cart" style="display: none;">Confirm Purchase</button>
+  </aside>
+</div>
+
+<section id="receipt" style="display: none;">
+  <h2>Receipt</h2>
+  <p><strong>Customer Name:</strong> <span id="receipt-customer-name"></span></p>
+  <p><strong>Address:</strong> <span id="receipt-customer-address"></span></p>
+  <p><strong>Contact Number:</strong> <span id="receipt-customer-contact"></span></p>
+  <h3>Items Purchased:</h3>
+  <ul id="receipt-items"></ul>
+  <p><strong>Total Price:</strong> ₱<span id="receipt-total-price">0.00</span></p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Tanya & Co.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

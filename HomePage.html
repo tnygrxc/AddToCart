@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanya & Co.</title>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2237/2237677.png">
+</head>
+
+<style>
+body {
+  background-image: url("https://bgfons.com/d/cloth_texture622.jpg");
+  min-height: 100vh;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #81D8D0;
+  color: white;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0 10px;
+   
+  text-align: center;
+  font-size: 55px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+}
+
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+#content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+#hero {
+  background: url('https://img.buzzfeed.com/buzzfeed-static/static/2020-04/30/3/enhanced/a0715518b35b/original-77-1588219160-8.jpg?crop=1200:630;0,0%26downsize=1250:*') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 150px 20px;
+}
+
+#hero h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.shop-now {
+  background-color: #38857e;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+#promotions {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.promo {
+  background: #81D8D0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.promo h3 {
+  margin: 0 0 10px 0;
+  color: #1f4744;
+}
+
+.promo p {
+  margin: 10px 0;
+  color: #1f4744;
+}
+
+.promo a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+#featured-products {
+  text-align: center;
+  
+}
+
+#featured-products h2 {
+  margin: 20px 0;
+  color: #38857e; 
+  font-size: 50px;
+}
+
+.product {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.add-to-cart {
+  background-color: #38857e;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: serif;
+}
+
+footer {
+  background-color: #81D8D0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+</style>
+
+<body>
+
+<header>
+  <h1>Tanya & Co.</h1>
+  <nav>
+    <ul>
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="index.html">Shop</a></li>
+      <li><a href="ContactPage.html">Contact</a></li>
+      <li><a href="AboutPage.html">About</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+<div id="content">
+  <section id="hero">
+    <h2>Hey there, Icons!</h2>
+    <p>Discover timeless beauty and modern sophistication.</p>
+    <a href="index.html" class="shop-now">Shop Now</a>
+  </section>
+
+  <section id="promotions">
+    <div class="promo">
+      <h3>Summer Collection</h3>
+      <p>Check out our latest summer collection.</p>
+      <a href="index.html" style="text-decoration-line: underline">View Collection</a>
+    </div>
+    <div class="promo">
+      <h3>Discounts & Offers</h3>
+      <p>Don't miss out on our exclusive discounts.</p>
+      <a href="index.html" style="text-decoration-line: underline">Shop Discounts</a>
+    </div>
+    <div class="promo">
+      <h3>New Arrivals</h3>
+      <p>Explore the newest arrivals in our store.</p>
+      <a href="index.html" style="text-decoration-line: underline">See New Arrivals</a>
+    </div>
+  </section>
+
+  <section id="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product">
+      <img src="https://i.postimg.cc/NMx68CdK/Diamond-Ring.jpg" alt="Jewelry1">
+      <h3>Diamond Ring</h3>
+      <a href="index.html"><button class="add-to-cart">Buy Now</button></a>
+    </div>
+
+    <div class="product">
+      <img src="https://i.postimg.cc/tgp7dqwz/Figaro-Bracelet.jpg" alt="Jewelry3">
+      <h3>Figaro Bracelet</h3>
+      <a href="index.html"><button class="add-to-cart">Buy Now</button></a>
+    </div>
+      
+    <div class="product">
+      <img src="https://i.postimg.cc/mrsVQ9T6/Heart-Necklace.jpg" alt="Jewelry6">
+      <h3>Heart Necklace</h3>
+      <a href="index.html"><button class="add-to-cart">Buy Now</button></a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2024 Tanya & Co.</p>
+</footer>
+
+</body>
+</html>
